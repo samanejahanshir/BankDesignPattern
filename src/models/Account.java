@@ -1,11 +1,22 @@
 package models;
 
+import java.util.Date;
+
 public abstract class Account {
     private  String customerName;
     private  String customerLastName;
     private  String customerNCode;
     private String Id;
-    public abstract String createAccount();
+    private Date createDate;
+    public abstract String createAccount(Customer customer);
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
 
     public String getCustomerName() {
         return customerName;

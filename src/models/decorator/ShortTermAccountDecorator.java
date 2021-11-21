@@ -1,4 +1,10 @@
 package models.decorator;
 
-public class ShortTermAccountDecorator {
+import models.Account;
+
+public class ShortTermAccountDecorator extends  AccountDecorator {
+
+    public ShortTermAccountDecorator(Account account) {
+        super(account);
+    }
 }

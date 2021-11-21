@@ -1,4 +1,9 @@
 package models.decorator;
 
-public class LongTermAccountDecorator {
+import models.Account;
+
+public class LongTermAccountDecorator extends  AccountDecorator{
+    public LongTermAccountDecorator(Account account) {
+        super(account);
+    }
 }
