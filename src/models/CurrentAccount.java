@@ -1,6 +1,6 @@
 package models;
 
-public class CurrentAccount implements  Account{
+public class CurrentAccount extends   Account{
     @Override
     public String createAccount() {
         return null;

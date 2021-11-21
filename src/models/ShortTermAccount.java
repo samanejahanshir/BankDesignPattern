@@ -1,6 +1,6 @@
 package models;
 
-public class ShortTermAccount implements Account{
+public class ShortTermAccount extends Account{
     @Override
     public String createAccount() {
         return null;
