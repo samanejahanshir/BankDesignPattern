@@ -1,5 +1,6 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
@@ -7,7 +8,7 @@ public class Customer {
     private  String lastName;
     private  String nationalCode;
     private String customerId;
-    private List<Account> accounts;
+    private List<Account> accounts=new ArrayList<>();
 
     public static final class CustomerBuilder {
         private  String firstName;
@@ -77,5 +78,16 @@ public class Customer {
             customer.lastName = this.lastName;
             return customer;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", nationalCode='" + nationalCode + '\'' +
+                ", customerId='" + customerId + '\'' +
+                ", accounts=" + accounts +
+                '}';
     }
 }
