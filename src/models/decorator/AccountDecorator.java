@@ -10,12 +10,15 @@ public class AccountDecorator extends Account {
     private Account account;
 
     public AccountDecorator(Account account) {
+        super(account.getCustomerName(),account.getCustomerLastName(),account.getCustomerNCode(),account.getType());
         this.account = account;
     }
 
 
     @Override
-    public String createAccount(Customer customer) {
-        return null;
+    public String createAccount(Customer customer,double balance) {
+        return account.createAccount(customer,balance);
+
+
     }
 }

@@ -1,9 +1,15 @@
 package models;
 
-public class LongTermAccount extends Account{
-    @Override
-    public String createAccount(Customer customer) {
+import java.util.Random;
 
-        return null;
+public class LongTermAccount extends Account{
+    public LongTermAccount(String customerName, String customerLastName, String customerNCode,String type) {
+        super(customerName, customerLastName, customerNCode,type);
+    }
+
+    @Override
+    public String createAccount(Customer customer,double balance) {
+
+       return "Long term account created .";
     }
 }

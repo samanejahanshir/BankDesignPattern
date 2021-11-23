@@ -10,32 +10,52 @@ public class Customer {
     private String customerId;
     private List<Account> accounts=new ArrayList<>();
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setNationalCode(String nationalCode) {
+        this.nationalCode = nationalCode;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
+    }
+
+    public void setAccounts(List<Account> accounts) {
+        this.accounts = accounts;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getNationalCode() {
+        return nationalCode;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
     public static final class CustomerBuilder {
         private  String firstName;
         private  String lastName;
         private  String nationalCode;
         private String customerId;
         private List<Account> accounts;
-
-        public String getFirstName() {
-            return firstName;
-        }
-
-        public String getLastName() {
-            return lastName;
-        }
-
-        public String getNationalCode() {
-            return nationalCode;
-        }
-
-        public String getCustomerId() {
-            return customerId;
-        }
-
-        public List<Account> getAccounts() {
-            return accounts;
-        }
 
         private CustomerBuilder() {
         }
