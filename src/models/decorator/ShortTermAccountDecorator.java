@@ -19,6 +19,10 @@ public class ShortTermAccountDecorator extends AccountDecorator {
             setProfit(calculateProfit(balance));
             return shortTermAccount.createAccount(customer,balance)+" => id account: " + getId();
         }
+        setCustomerNCode(null);
+        setId(null);
+        setCustomerLastName(null);
+        setCustomerName(null);
         throw new RuntimeException(customer.getFirstName()+ " "+customer.getLastName()+" "+ "balance < 50000 ! please deposit more than 50000 ");
 
 

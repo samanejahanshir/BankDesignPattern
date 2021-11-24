@@ -17,6 +17,10 @@ public class LongTermAccountDecorator extends  AccountDecorator{
            setBalance(balance);
             return  longTermAccount.createAccount(customer,balance)+" => id account : "+ getId();
         }
+        setCustomerNCode(null);
+        setId(null);
+        setCustomerLastName(null);
+        setCustomerName(null);
         throw new RuntimeException(customer.getFirstName()+ " "+customer.getLastName()+" "+ "balance < 100000 !  please deposit more than 100000");
     }
 }

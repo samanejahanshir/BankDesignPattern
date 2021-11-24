@@ -33,7 +33,7 @@ public class Main {
             System.out.println( e.getMessage());
         }
         try {
-            System.out.println(mohammadAccount.createAccount(mohammad, 90000));
+            System.out.println(mohammadAccount.createAccount(mohammad, 100000));
         }catch (RuntimeException e){
             System.out.println( e.getMessage());
         }
